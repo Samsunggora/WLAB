@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: "Cargo Regular";
+    src: url("/fonts/Cardo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cargo Italic";
+    src: url("/fonts/Cardo-Italic.ttf");
+}
+
+@font-face {
     font-family: "Open Sans Bold";
     src: url("/fonts/static/OpenSans/OpenSans-Bold.ttf");
 }
@@ -43,8 +53,9 @@
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 
 }
 
@@ -84,7 +95,7 @@ body {
 /*intro*/
 .intro {
     height: 750px;
-    background: #31344e url("img/intro-bg.jpg") center no-repeat;
+    background: #252a48 url("img/intro-bg.jpg") center no-repeat;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -103,7 +114,7 @@ body {
 }
 
 .intro__subtitle {
-    font-style: 22px;
+    font-size: 22px;
     color: #ffffff;
     line-height: 1.5;
     font-weight: 400;
@@ -241,7 +252,184 @@ body {
 
 /*/works*/
 
+/*team*/
+.team {
+    margin: 100px 70px;
+}
 
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+.team__name {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    color: #2d3033;
+}
+
+.team__prof {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #e84545;
+}
+
+.team__text {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    color: #6c7279;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.team__social {
+    display: flex;
+}
+
+.social__link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #252a48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+/*/team*/
+
+
+/*testimonials*/
+.testimonials {
+    background-color: #53354a;
+}
+
+.testimonials__item {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.testimonials__photo {
+    width: 50%;
+    position: relative;
+    height: 500px;
+
+}
+
+.testimonials__img {
+    top: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+
+}
+
+.testimonials__content {
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content__text {
+    font-family: "Cargo Italic", sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: white;
+
+}
+
+.content__name {
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+
+/*/testimonials*/
+
+/*Download*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+
+}
+
+.download__title {
+    font-family: "Raleway Bold", sans-serif;
+    color: #2d3033;
+    margin-bottom: 5px;
+
+}
+
+.download__text {
+    font-size: 13px;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+
+/*/Download*/
+
+
+/*Footer*/
+
+.footer {
+    padding: 70px 0;
+    background-color: #3a3e64;
+}
+
+.footer__block {
+    width: 33.3333333333%;
+    text-align: center;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer__address {
+    font-style: normal;
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.footer__social{
+    width: 40px;
+    height: 40px;
+
+
+}
+/*/Footer*/
+/*Any*/
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
