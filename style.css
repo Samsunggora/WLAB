@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/static/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("/fonts/static/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans SemiBold";
+    src: url("fonts/static/OpenSans/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: url("fonts/static/Raleway-Bold.ttf");
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.header__inner {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #515369;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/*intro*/
+.intro {
+    height: 750px;
+    background: #31344e url("img/intro-bg.jpg") center no-repeat;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro__title {
+    margin: 0;
+    font-family: "Open Sans Bold", sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.intro__subtitle {
+    font-style: 22px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.intro__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    font-family: "Open Sans SemiBold", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity .2s linear;
+    padding: 14px 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+/*/intro*/
+
+/*features*/
+.features {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.features__items {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+
+}
+
+.features__img {
+    margin-bottom: 25px;
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+
+}
+
+.features__title {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/*/features*/
+
+
+/*works*/
+.works__img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__content {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(232, 69, 69, 0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity .2s linear;
+}
+
+.works__item {
+    width: 25%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.works__item:hover .works__content {
+    opacity: 1;
+
+}
+
+.works__title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.works__text {
+    font-size: 14px;
+    color: #fff;
+}
+
+/*/works*/
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
